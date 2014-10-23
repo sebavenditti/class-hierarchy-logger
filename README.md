@@ -1,9 +1,9 @@
-# class-hierarchy-logger
+# Class Hierarchy Logger
 
-Helper classes to log the complete hierarchy of a class in Objective-C.
+Helper to log the complete hierarchy of a class in Objective-C.
 
 
-## What can I do with this? What led you to implement it?
+## What can I do with this? What led you to implement it?
 
 One of my apps uses several APIs, resulting in a complex hierarchy. I needed to migrate all the requests from one endpoint to a newer one, and this helper saved me a lot of time determining what to change. It might also be helpful to understand your UIView or UIViewController class hierarchy.
 
@@ -14,7 +14,7 @@ One of my apps uses several APIs, resulting in a complex hierarchy. I needed to 
 2. `#import "ClassHierarchyLogger.h"` where you want to use it.
 3. Use the ClassHierarchyLogger's `printHierarchyOfClass:formatterBlock:indentationString:` method.
 
-### Example 1: Indented list
+### Example 1: Indented list
 
 It's sometimes useful to have an indented view of the hierarchy, so...
 
@@ -47,13 +47,13 @@ It's sometimes useful to have an indented view of the hierarchy, so...
                 * MyScreen2iPhoneDetailViewController
                 * MyScreen2iPadDetailViewController
 
-### Example 2: Detailed grid
+### Example 2: Detailed grid
 
 If you would prefer to print several attributes of your class on each line, separated by tabs, in order to paste them into a spreadsheet, try something like this (replacing `MyBaseAPIConnector` with your class name):
 
 #### This code:
 
-```objective-c
+```smalltalk
     // Print the header line
 	NSLog(@"Class\tBase URL\tRelative Path\tMethod");
 	// Print the list
