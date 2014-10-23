@@ -55,8 +55,8 @@ If you would prefer to print several attributes of your class on each line, sepa
 
 ```smalltalk
     // Print the header line
-	NSLog(@"Class\tBase URL\tRelative Path\tMethod");
-	// Print the list
+    NSLog(@"Class\tBase URL\tRelative Path\tMethod");
+    // Print the list
     [ClassHierarchyLogger printHierarchyOfClass:[MyBaseAPIConnector class]
                                  formatterBlock:^NSString *(ClassRepresentation *classRepresentation) {
                                      NSString *result = @"";
